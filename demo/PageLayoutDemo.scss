@@ -283,9 +283,44 @@
 	    height: 55px;
 	    line-height: 55px;
 	}
-	.sider-right {
-
-
+	.u-menu-sub {
+    	background: rgba(74,81,93,0.60);
+    	color: #FFFFFF;
+	}
+	.u-menu-sub .u-menu-submenu {
+		color: #a6aab0;
+	}
+	.u-menu-sub .u-menu-item {
+	}
+	.u-menu-submenu-active,.u-menu-item-active {
+		background: none;
+		color: #fff;
+	}
+	.u-menu-inline .u-menu-selected, .u-menu-inline .u-menu-inline .u-menu-item-selected {
+		color: #fff;
+		opacity: 1;
+		border: none;
+	}
+	.u-menu-submenu .u-menu-sub {
+		background: none;
+	}
+	.u-menu-sub .u-menu-item-active {
+		background: none;
+	    opacity: 1;
+	}
+	.inner-container {
+		width: 100%;
+	    height: 100%;
+	    background: whitesmoke;
+	    padding-left: 30px;
+	    padding-top: 20px;
+	}
+	.inner-content {
+		width: 100%;
+		height: 100%;
+		min-height: 400px;
+		min-width: 400px;
+		background: #fff;
 	}
 	.content {
 		display: flex;
@@ -294,10 +329,160 @@
 		margin-top: 0;
 	    border-top: 0;
 	    border-radius: 0;
-	    min-height: 400px;
 	}
 	.u-menu .u-menu-sub.u-menu-inline {
 		padding-left: 12px;
+	}
+	.u-menu-inline > .u-menu-submenu > .u-menu-submenu-title {
+		background: none;
+	}
+	.wrapper-menu {
+		min-height: 400px;
+		background: #5e6670;
+    	color: #fff;
+	}
+	.u-menu-inline > .u-menu-item{
+		color: #a6aab0;
+		cursor: pointer;
+	}
+	.u-menu-submenu-selected {
+		background: none;
+		color: #fff;
+	}
+	.icon-nav {
+		width: 100%;
+	    display: flex;
+	    justify-content: flex-end;
+	    a{
+	    	margin-left: 20px;
+	    	img {
+	    		margin-right: 10px;
+    			border-radius: 50%;
+	    	}
+	    }
+	}
+	.u-breadcrumb {
+	    margin-bottom: 0;
+	    margin-top: 0;
+	    padding-top: 0;
+	    padding-left: 0;
+	}
+}
+
+#demo6 {
+	.u-navbar-side-container {
+		width: 70px;
+	}
+	.u-menu-vertical .u-menu-submenu-title:after {
+		content: ""
+	}
+	.u-navbar-side-container {
+		background: none;
+	    border: none;
+	    box-shadow: none;
+	    z-index: 2;
+	    position: relative;
+	    margin-top: -1px;
+	    float: left;
+	}
+	.u-navbar-side-container > .u-menu { 
+		min-height: 400px;
+	}
+	.u-navbar-side-container .u-menu {
+		color: #b3b7bc;
+		background: #5E6670;
+	    padding-top: 10px;
+	    margin-top: 0;
+	    border-radius: 0;
+	   
+	}
+	.u-menu-vertical .u-menu-sub .u-menu-item {
+		padding: 6px;
+		text-align: center;
+		cursor: default
+	}
+	.u-menu .u-menu-vertical.u-menu-sub {
+		background: #4a515d !important;
+		margin-left: 0;
+	}
+	.u-menu-submenu-vertical > .u-menu {
+		min-width: 90px;
+	}
+	.u-menu-item-active, .u-menu-submenu-active > .u-menu-submenu-title {
+		background: #4A515D;
+		color: #fff;
+	}
+	
+	.u-menu-vertical > .u-menu-submenu > .u-menu-submenu-title {
+		padding-left: 5px;
+	}
+	.u-menu-item, .u-menu-submenu-title {
+		font-size: 12px;
+	}
+	.first-menu {
+		display: flex;
+	}
+	.u-container-fluid {
+		padding-left: 0;
+		margin-left: -1px;
+	}
+	.toggle-show {
+		border: 1px solid #E14C46;
+	    width: 70px;
+	    border-radius: 0;
+	    background: red;
+	    height: 54px;
+	    margin: 0;
+	    padding: 0;
+	    color: #fff;
+	    display: inline-block;
+	    text-align: center;
+	    line-height: 54px
+	}
+	.wrapper-menu {
+		min-height: 400px;
+		background: #5e6670;
+    	color: #fff;
+	}
+	.toggle-show .uf{
+		font-size: 25px;
+	}
+	.inner-container {
+		width: 100%;
+	    height: 100%;
+	    background: whitesmoke;
+	    padding: 20px 30px 0;
+	    padding-left: 100px;
+	    transition:all .5s ease-in-out;
+	}
+	.inner-content {
+		width: 100%;
+		height: 100%;
+		min-height: 400px;
+		min-width: 400px;
+		background: #fff;
+	}
+	.inner-content{
+		> .u-menu {
+			border:none;
+			border-right: 1px solid #d9d9d9;
+	    	border-radius: 0;
+	    	box-shadow: none;
+		}
+		.u-menu-item {
+		    font-size: 14px;
+		    color: #666666;
+		    padding-left: 30px !important;
+		    border-right: 2px solid transparent;
+		}
+		.u-menu-item-active,.u-menu-item-selected {
+			background: none;
+			color: #E64A46;
+			border-color: #E64A46;
+		}
+	} 
+	.inner-container.expanded {
+		padding-left: 30px;
 	}
 	.icon-nav {
 		width: 100%;

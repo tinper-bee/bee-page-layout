@@ -73,7 +73,7 @@ class Demo4 extends Component {
         );
         return (
             <div id="demo4">
-                <Navbar expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>
+                <Navbar fluid expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>
                     <Header>
                         <Brand>
                             <a href="#"><img style={{width:140}} src="//tinper.org/assets/images/tinperlogos32.png"/></a>

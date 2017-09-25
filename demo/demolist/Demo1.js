@@ -45,8 +45,8 @@ class Demo1 extends Component {
 
     render() {
         return (
-            <div id="demo5">
-                <Navbar expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>
+            <div id="demo1">
+                <Navbar fluid expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>
                     <MenuToggle show/>
                     <Header>
                         <Brand>

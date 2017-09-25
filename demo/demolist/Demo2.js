@@ -103,7 +103,7 @@ class Demo2 extends Component {
     render() {
         return (
             <div id="demo2">
-                <Navbar expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>
+                <Navbar fluid expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>
                     <Header>
                         <Brand>
                             <a href="#"><img style={{width:140}} src="//tinper.org/assets/images/tinperlogos32.png"/></a>
@@ -129,7 +129,7 @@ class Demo2 extends Component {
                     </Nav>
                 </Navbar>
                 <div className="inner-container">
-                    <Menu mode="inline" openKeys={this.state.openKeys} selectedKeys={[this.state.current]} className="inner-menu" style={{ width: 240 }} onOpenChange={this.onOpenChange.bind(this)} style={{ width: 240 }}  onClick={this.handleClick.bind(this)}>
+                    <Menu mode="inline" className="wrapper-menu" openKeys={this.state.openKeys} selectedKeys={[this.state.current]} className="inner-menu" style={{ width: 240 }} onOpenChange={this.onOpenChange.bind(this)} style={{ width: 240 }}  onClick={this.handleClick.bind(this)}>
                         <SubMenu key="组织1" title={<span><span>组织 1</span></span>}>
                             <Menu.Item key="选项 1">选项 1</Menu.Item>
                             <Menu.Item key="选项 2">选项 2</Menu.Item>

@@ -1,5 +1,5 @@
 /**
- * @title Navbar和Menus的组合
+ * @title Demo5
  * @description 示例采取navbar与menus的组合，达到一种PC端常用的复合导航菜单。导航添加了常用的搜索表单消息提醒等组件。
  *
  */
@@ -28,10 +28,12 @@ class Demo5 extends Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
-            expanded: false,
             selectedkey: 1,
+            expanded: false,
+            currentArray: [],
             openKeys: []
         }
+        this.myfilter = this.myfilter.bind(this);
     }
 
     handleSelect(index) {
@@ -50,6 +52,9 @@ class Demo5 extends Component {
         const state = this.state;
         const latestOpenKey = this.myfilter(openKeys,state.openKeys);
         const latestCloseKey = this.myfilter(state.openKeys,openKeys);
+
+         /*   const latestOpenKey = openKeys.find(key => !(state.openKeys.indexOf(key) > -1));
+            const latestCloseKey = state.openKeys.find(key => !(openKeys.indexOf(key) > -1));*/
 
         let nextOpenKeys = [];
         if (latestOpenKey) {
@@ -85,7 +90,6 @@ class Demo5 extends Component {
         return map[key] || [];
     }
 
-
     renderBreadcrumb = () => {
         let currentArray = this.state.currentArray;
         let BreadcrumbDom = [];
@@ -100,7 +104,7 @@ class Demo5 extends Component {
     render() {
         return (
             <div id="demo5">
-                <Navbar expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>
+                <Navbar fluid expanded={this.state.expanded} onToggle={this.onToggle}>
                     <Nav pullRight>
                         <NavItem eventKey={3} className="icon-nav">
                             <a href="#"> <Icon type="uf uf-qm-c"></Icon> 帮助 </a>
@@ -116,32 +120,22 @@ class Demo5 extends Component {
                         <div className="logo-header">
                             <a href="#"><img style={{width:140}} src="//tinper.org/assets/images/tinperlogos32.png"/></a>
                         </div>
-                        <Menu onClick={this.handleClick.bind(this)}
-                              style={{ width: 240 }}
-                              openKeys={this.state.openKeys}
-                              onOpenChange={this.onOpenChange.bind(this)} 
-                              onClick={this.handleClick.bind(this)}
-                              selectedKeys={[this.state.current]}
-                              mode="inline">
-                            <SubMenu key="组织 1" title={<span><Icon type="uf-pc-2" /><span>组织 1</span></span>}>
-                                <MenuItemGroup title="组 1">
-                                    <Menu.Item key="选项 1">选项 1</Menu.Item>
-                                    <Menu.Item key="选项 2">选项 2</Menu.Item>
-                                </MenuItemGroup>
-                                <MenuItemGroup title="组 2">
-                                    <Menu.Item key="选项 3">选项 3</Menu.Item>
-                                    <Menu.Item key="选项 4">选项 4</Menu.Item>
-                                </MenuItemGroup>
+                        <Menu mode="inline" className="wrapper-menu" openKeys={this.state.openKeys} selectedKeys={[this.state.current]} style={{ width: 240 }} onOpenChange={this.onOpenChange.bind(this)} style={{ width: 240 }}  onClick={this.handleClick.bind(this)}>
+                            <SubMenu key="组织1" title={<span><span>组织 1</span></span>}>
+                                <Menu.Item key="选项 1">选项 1</Menu.Item>
+                                <Menu.Item key="选项 2">选项 2</Menu.Item>
+                                <Menu.Item key="选项 3">选项 3</Menu.Item>
+                                <Menu.Item key="选项 4">选项 4</Menu.Item>
                             </SubMenu>
-                            <SubMenu key="组织 2" title={<span><Icon type="uf-pc-2" /><span>组织 2</span></span>}>
+                            <SubMenu key="组织2" title={<span><span>组织 2</span></span>}>
                                 <Menu.Item key="选项 5">选项 5</Menu.Item>
                                 <Menu.Item key="选项 6">选项 6</Menu.Item>
-                                <SubMenu key="demo3sub3" title="子项">
+                                <SubMenu key="子项" title="子项">
                                     <Menu.Item key="选项 7">选项 7</Menu.Item>
                                     <Menu.Item key="选项 8">选项 8</Menu.Item>
                                 </SubMenu>
                             </SubMenu>
-                            <SubMenu key="组织 3" title={<span><Icon type="uf-pc-2" /><span>组织 3</span></span>}>
+                            <SubMenu key="组织3" title={<span><span>组织 3</span></span>}>
                                 <Menu.Item key="选项 9">选项 9</Menu.Item>
                                 <Menu.Item key="选项 10">选项 10</Menu.Item>
                                 <Menu.Item key="选项 11">选项 11</Menu.Item>
@@ -149,8 +143,9 @@ class Demo5 extends Component {
                             </SubMenu>
                         </Menu>
                     </div>
-                    <div className="inner-content">
+                    <div className="inner-container">
                         {this.state.current && <Breadcrumb>{this.renderBreadcrumb()}</Breadcrumb>}
+                        <div className="inner-content"></div>
                     </div>
                 </div>
                 

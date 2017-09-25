@@ -50,7 +50,7 @@ class Demo3 extends Component {
                     <a className="part_2" href="#">通知</a>
                     <a href="#">二维码</a>
                 </div>
-                <Navbar expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>
+                <Navbar fluid expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>
                     <Header>
                         <Brand>
                             <a href="#"><img style={{width:140}} src="//tinper.org/assets/images/tinperlogos32.png"/></a>
