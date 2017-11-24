@@ -62,7 +62,7 @@ class Demo6 extends Component {
                         <NavItem eventKey={3} className="icon-nav">
                             <a href="#"> <Icon type="uf uf-qm-c"></Icon> 帮助 </a>
                             <a className="" href="#"> 
-                                <img alt="@ahua52" className="avatar float-left mr-1" src="https://avatars2.githubusercontent.com/u/19704104?v=4&amp;s=40" height="20" width="20" />
+                                <img alt="@ahua52" className=" float-left mr-1" src="https://avatars2.githubusercontent.com/u/19704104?v=4&amp;s=40" height="20" width="20" />
                                 刘认华 
                             </a>
                         </NavItem>
