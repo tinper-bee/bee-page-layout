@@ -106,7 +106,9 @@ class Demo2 extends Component {
                 <Navbar fluid expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>
                     <Header>
                         <Brand>
-                            <a href="#"><img style={{width:140}} src="//tinper.org/assets/images/tinperlogos32.png"/></a>
+                            <a href="#">
+                                <span className="logo-placeholder">logo</span>
+                            </a>
                         </Brand>
                     </Header>
 

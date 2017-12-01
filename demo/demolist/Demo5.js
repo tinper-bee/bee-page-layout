@@ -118,7 +118,9 @@ class Demo5 extends Component {
                 <div className="content">
                     <div className="sider-menu">
                         <div className="logo-header">
-                            <a href="#"><img style={{width:140}} src="//tinper.org/assets/images/tinperlogos32.png"/></a>
+                            <a href="#">
+                                <span className="logo-placeholder">logo</span>
+                            </a>
                         </div>
                         <Menu mode="inline" className="wrapper-menu" openKeys={this.state.openKeys} selectedKeys={[this.state.current]} style={{ width: 240 }} onOpenChange={this.onOpenChange.bind(this)} style={{ width: 240 }}  onClick={this.handleClick.bind(this)}>
                             <SubMenu key="组织1" title={<span><span>组织 1</span></span>}>
