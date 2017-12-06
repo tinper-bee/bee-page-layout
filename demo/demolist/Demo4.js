@@ -1,6 +1,7 @@
 
 
 import React, { Component } from 'react';
+import ReactDOM from "react-dom";
 import Menu,{ Item as MenuItem, Divider, SubMenu, MenuItemGroup }  from 'bee-menus';
 import FormControl from 'bee-form-control';
 import Badge from 'bee-badge';
@@ -29,6 +30,11 @@ class Demo4 extends Component {
         }
     }
 
+    componentDidMount() {
+        let navwidth = document.getElementById("demo4");
+        this.setState({navwidth:navwidth+"px"})
+    }
+
     handleSelect(index) {
         this.setState({selectedkey: index});
     } 
@@ -44,7 +50,6 @@ class Demo4 extends Component {
     }
 
     onSelectMenu = (key) => {
-        debugger;
        console.log(`${key} selected`);
 
      }
@@ -86,7 +91,9 @@ class Demo4 extends Component {
                         <NavItem eventKey={2}>组织 2</NavItem>
                         <NavItem eventKey={3}>
                             <Dropdown
+                                ref="dropdown"
                                 overlayClassName="dropdown-menu"
+                                style={{width:this.state.navwidth}}
                                 trigger={['click']}
                                 visible = {this.state.dropdownVisible}
                                 overlay={menu1}
