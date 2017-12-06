@@ -808,10 +808,7 @@
 		border: none;
 	}
 	.u-tabs-trapezoid .u-tabs-nav .u-tabs-tab::before {	
-		border-right: rgb(224, 224, 224) 15px solid;
-	    border-left: rgb(224, 224, 224) 15px solid;
-	    border-top-left-radius: 50px;
-	    border-top-right-radius: 50px;
+		
 	    border-bottom-color: #e0e0e0;
 	}
 	.u-tabs-trapezoid .u-tabs-nav .u-tabs-tab-active::after {
@@ -822,9 +819,6 @@
 	}
 	.u-tabs-trapezoid .u-tabs-nav .u-tabs-tab-active::before {
 	    border-bottom-color: #fff;
-	    transition: none;
-	    border-right-color: #fff;
-		border-left-color: #fff;
 	}
 	.u-tabs-nav {
 		display: flex;
