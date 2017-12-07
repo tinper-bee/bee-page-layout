@@ -9,8 +9,7 @@ import classnames from 'classnames';
 import Menu from 'bee-menus';
 import FormControl from 'bee-form-control';
 import Tabs, { TabPane } from 'bee-tabs';
-import TabContent from 'bee-tabs/build/TabContent';
-import ScrollableInkTabBar from 'bee-tabs/build/ScrollableInkTabBar';
+
 
 import Badge from 'bee-badge';
 import Icon from 'bee-icon';
@@ -137,8 +136,6 @@ class Demo8 extends Component {
                           onChange={this.changePanelKey}
                           destroyInactiveTabPane
                           tabBarStyle="trapezoid"
-                          renderTabBar={() => <ScrollableInkTabBar />}
-                          renderTabContent={() => <TabContent />}
                         >
                          {this.renderNavTabPane()}
                           
@@ -170,8 +167,6 @@ class Demo8 extends Component {
                       onChange={this.changePanelKey}
                       destroyInactiveTabPane
                       tabBarStyle="trapezoid"
-                      renderTabBar={() => <ScrollableInkTabBar />}
-                      renderTabContent={() => <TabContent />}
                     >
                       {this.renderTabPane()}
                       
