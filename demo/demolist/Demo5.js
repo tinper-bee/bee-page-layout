@@ -6,20 +6,14 @@
 
 import React, { Component } from 'react';
 import Menu from 'bee-menus';
-import FormControl from 'bee-form-control';
-import Badge from 'bee-badge';
 import Breadcrumb from 'bee-breadcrumb';
 import Icon from 'bee-icon';
-import Navbar from 'bee-Navbar';
+import Navbar from 'bee-navbar';
 
 const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
-const MenuToggle = Menu.MenuToggle;
 const SideContainer = Menu.SideContainer;
 
 const NavItem = Navbar.NavItem;
-const Header = Navbar.Header;
-const Brand = Navbar.Brand;
 const Nav = Navbar.Nav;
 
 console.log(SideContainer);
@@ -122,7 +116,7 @@ class Demo5 extends Component {
                                 <span className="logo-placeholder">logo</span>
                             </a>
                         </div>
-                        <Menu mode="inline" className="wrapper-menu" openKeys={this.state.openKeys} selectedKeys={[this.state.current]} style={{ width: 240 }} onOpenChange={this.onOpenChange.bind(this)} style={{ width: 240 }}  onClick={this.handleClick.bind(this)}>
+                        <Menu mode="inline" className="wrapper-menu" openKeys={this.state.openKeys} selectedKeys={[this.state.current]} style={{ width: 240 }} onOpenChange={this.onOpenChange.bind(this)}  onClick={this.handleClick.bind(this)}>
                             <SubMenu key="组织1" title={<span><span>组织 1</span></span>}>
                                 <Menu.Item key="选项 1">选项 1</Menu.Item>
                                 <Menu.Item key="选项 2">选项 2</Menu.Item>

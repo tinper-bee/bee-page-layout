@@ -6,15 +6,8 @@
 
 import React, { Component } from 'react';
 import Menu from 'bee-menus';
-import FormControl from 'bee-form-control';
-import Badge from 'bee-badge';
 import Icon from 'bee-icon';
-import Navbar from 'bee-Navbar';
-
-const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
-const MenuToggle = Menu.MenuToggle;
-const SideContainer = Menu.SideContainer;
+import Navbar from 'bee-navbar';
 
 const NavItem = Navbar.NavItem;
 const Header = Navbar.Header;

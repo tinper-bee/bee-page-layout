@@ -3,15 +3,10 @@
 import React, { Component } from 'react';
 import ReactDOM from "react-dom";
 import Menu,{ Item as MenuItem, Divider, SubMenu, MenuItemGroup }  from 'bee-menus';
-import FormControl from 'bee-form-control';
-import Badge from 'bee-badge';
 import Icon from 'bee-icon';
 
-import Navbar from 'bee-Navbar';
+import Navbar from 'bee-navbar';
 import Dropdown from 'bee-dropdown';
-
-const MenuToggle = Menu.MenuToggle;
-const SideContainer = Menu.SideContainer;
 
 const NavItem = Navbar.NavItem;
 const Header = Navbar.Header;

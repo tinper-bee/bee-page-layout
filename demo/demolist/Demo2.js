@@ -6,16 +6,11 @@
 
 import React, { Component } from 'react';
 import Menu from 'bee-menus';
-import FormControl from 'bee-form-control';
-import Badge from 'bee-badge';
 import Icon from 'bee-icon';
-import Navbar from 'bee-Navbar';
+import Navbar from 'bee-navbar';
 import Breadcrumb from 'bee-breadcrumb';
 
 const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
-const MenuToggle = Menu.MenuToggle;
-const SideContainer = Menu.SideContainer;
 
 const NavItem = Navbar.NavItem;
 const Header = Navbar.Header;
@@ -131,7 +126,14 @@ class Demo2 extends Component {
                     </Nav>
                 </Navbar>
                 <div className="inner-container">
-                    <Menu mode="inline" className="wrapper-menu" openKeys={this.state.openKeys} selectedKeys={[this.state.current]} className="inner-menu" style={{ width: 240 }} onOpenChange={this.onOpenChange.bind(this)} style={{ width: 240 }}  onClick={this.handleClick.bind(this)}>
+                    <Menu
+                        mode="inline"
+                        className="wrapper-menu inner-menu"
+                        openKeys={this.state.openKeys}
+                        selectedKeys={[this.state.current]}
+                        style={{ width: 240 }}
+                        onOpenChange={this.onOpenChange.bind(this)}
+                        onClick={this.handleClick.bind(this)}>
                         <SubMenu key="组织1" title={<span><span>组织 1</span></span>}>
                             <Menu.Item key="选项 1">选项 1</Menu.Item>
                             <Menu.Item key="选项 2">选项 2</Menu.Item>
