@@ -3,6 +3,7 @@
 /*  Navlayout  */
 /* FormGroup */
 /*  Navlayout  */
+@import url(../node_modules/bee-message/build/Message.css);
 .red {
   color: rgb(244,67,54) !important; }
 
@@ -5259,6 +5260,18 @@ a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
   .u-panel .u-panel-body {
     padding: 15px 15px;
     position: relative; }
+    .u-panel .u-panel-body .uf {
+      position: absolute;
+      right: 25px;
+      top: 30px;
+      color: #fff;
+      font-size: 20px;
+      padding: 2px 8px;
+      margin: 8px;
+      border-radius: 4px;
+      cursor: pointer; }
+      .u-panel .u-panel-body .uf:hover {
+        color: #a8a7a7; }
 
 .u-panel-default {
   border-color: #ddd; }
@@ -6179,7 +6192,7 @@ input.u-button[type="submit"] {
   border-radius: 4px; }
   .u-breadcrumb li {
     display: inline-block;
-    color: #31c4dc; }
+    color: rgb(0,188,212); }
   .u-breadcrumb a {
     color: rgb(0,188,212);
     text-decoration: none; }
@@ -6768,7 +6781,7 @@ a {
     padding: 7px 7px 7px 16px;
     white-space: nowrap; }
     .u-menu-item.u-menu-item-disabled, .u-menu-item.u-menu-submenu-disabled, .u-menu-submenu-title.u-menu-item-disabled, .u-menu-submenu-title.u-menu-submenu-disabled {
-      color: #999 !important;
+      color: #999;
       cursor: not-allowed; }
   .u-menu > .u-menu-item-divider {
     height: 1px;
@@ -6936,7 +6949,7 @@ a {
   color: #108ee9; }
 
 .u-menu-submenu-inline > .u-menu-submenu-title:after {
-  font-family: "uf" !important;
+  font-family: "uf";
   font-style: normal;
   vertical-align: baseline;
   text-align: center;
@@ -6982,7 +6995,7 @@ a {
 
 .u-menu-vertical .u-menu-submenu-title:after {
   transform: rotate(270deg) scale(0.75);
-  font-family: "uf" !important;
+  font-family: "uf";
   font-style: normal;
   vertical-align: baseline;
   text-align: center;
@@ -7016,7 +7029,7 @@ a {
       margin-left: 0;
       left: 0; }
     .u-menu-dark.u-menu-inline .u-menu-item-selected {
-      background-color: #108ee9;
+      background-color: transparent;
       color: #fff; }
   .u-menu-dark.u-menu-vertical {
     border-right: 0; }
@@ -7543,6 +7556,8 @@ a {
   .u-form-control:focus {
     border-color: #66afe9;
     outline: 0; }
+  .u-form-control::-ms-clear, .u-form-control ::-ms-reveal {
+    display: none; }
 
 .u-form-control[disabled] {
   background: #eee;
@@ -7645,7 +7660,7 @@ a {
   font-weight: normal;
   font-variant: normal;
   line-height: inherit;
-  vertical-align: baseline;
+  vertical-align: sub;
   text-align: center;
   text-transform: none;
   font-smoothing: antialiased;
