@@ -1,26 +1,28 @@
-.u-panel .u-panel-heading {
-  padding: 0;
-}
-.horizontal-submenu  {
-  display: flex;
-  justify-content: center;
-  margin-top: 17px;
-}
-.dropdown-menu.u-dropdown {
-  left: 30% !important;
-  margin-top: 68px;
-}
-.dropdown-menu {
-  .u-dropdown-menu > .u-dropdown-menu-item {
-    margin-top: 5px;
-    border-bottom: 2px solid transparent;
-    cursor: default;
-    padding: 0 20px;
+.demo1 {
+    background: #C0C5CF;
+    padding: 16px;
+    .bee-page-layout {
 
-  }
-  .u-dropdown-menu > .u-dropdown-menu-item:hover, .u-dropdown-menu > .u-dropdown-menu-item-active, .u-dropdown-menu > .u-dropdown-menu-item-selected {
-    background: #fff;
-    border-bottom-color: red;
-    border-radius: 0;
-  }
+        // Header
+        .header {
+            text-align: center;
+            line-height: 48px;
+            background: #EBECF0;
+        }
+
+        // searchArea
+        .search-area {
+            text-align: center;
+            line-height: 40px;
+            background: #F7F9FB;
+        }
+
+        //table展示区域
+        .table-container {
+            min-height: 500px;
+            text-align: center;
+            padding-top: 100px;
+            background: #fff;
+        }
+    }
 }

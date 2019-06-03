@@ -1,2 +1,2 @@
-import PageLayout from './PageLayout';
-export default PageLayout;
+import Pagelayout from './Pagelayout';
+export default Pagelayout;

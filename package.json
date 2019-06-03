@@ -30,29 +30,30 @@
     "chrome": "bee-tools-test run chrome",
     "coveralls": "bee-tools-test run coverage",
     "browsers": "bee-tools-test run browsers",
-    "pub": "bee-tools run pub"
+    "pub": "bee-tools run pub",
+    "changelog": "bee-tools run changelog"
   },
   "dependencies": {
     "babel-runtime": "^6.23.0",
-    "bee-badge": "latest",
-    "bee-breadcrumb": "latest",
-    "bee-dropdown": "latest",
-    "bee-form-control": "latest",
-    "bee-icon": "latest",
-    "bee-menus": "latest",
-    "bee-navbar": "latest",
-    "bee-tabs": "latest",
-    "classnames": "latest",
+    "bee-layout": "latest",
+    "classnames": "^2.2.6",
     "tinper-bee-core": "latest"
   },
+  "peerDependencies": {
+    "react": "^15.3.0 || ^16.0",
+    "react-dom": "^15.3.0 || ^16.0",
+    "prop-types": "15.6.0"
+  },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "enzyme": "^2.4.1",
-    "react-addons-test-utils": "15.3.2",
-    "console-polyfill": "~0.2.1",
-    "es5-shim": "~4.1.10",
-    "bee-panel": "1.2.12",
+    "bee-button": "latest",
+    "bee-clipboard": "^2.0.0",
+    "bee-drawer": "0.0.2",
     "bee-layout": "latest",
-    "bee-button": "latest"
+    "bee-panel": "latest",
+    "chai": "^3.5.0",
+    "console-polyfill": "~0.2.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "enzyme": "^2.4.1",
+    "es5-shim": "~4.1.10"
   }
 }
